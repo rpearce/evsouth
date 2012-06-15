@@ -102,3 +102,31 @@ body {
 .plug {
   padding-top: 75px;
 }
+.bottom-links div {
+  @include box-shadow(rgba(0,0,0,0.1) 0 1px 3px);
+  @include border-radius(5px);
+  margin-top: 17px;
+  padding: 8px 0;
+  width: 237px;
+  height: 190px;
+  border-top: 1px solid #f2f2f2;
+	background: #f6f6f6;
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(50%,rgba(249,249,249,1)),color-stop(100%,rgba(240,240,240,1)));
+	background:-webkit-linear-gradient(top,rgba(249,249,249,1) 50%,rgba(240,240,240,1) 100%);
+	background:-moz-linear-gradient(top,rgba(249,249,249,1) 50%,rgba(240,240,240,1) 100%);
+	background:-o-linear-gradient(top,rgba(249,249,249,1) 50%,rgba(240,240,240,1) 100%);
+	background:-ms-linear-gradient(top,rgba(249,249,249,1) 50%,rgba(240,240,240,1) 100%);
+	background:linear-gradient(top,rgba(249,249,249,1) 50%,rgba(240,240,240,1) 100%);
+  &:hover {
+  	background:#f0f0f0;
+  	background:-moz-linear-gradient(top,rgba(249,249,249,1)50%,rgba(224,224,224,1)100%);
+  	background:-webkit-gradient(linear,lefttop,leftbottom,color-stop(50%,rgba(249,249,249,1)),color-stop(100%,rgba(224,224,224,1)));
+  	background:-webkit-linear-gradient(top,rgba(249,249,249,1)50%,rgba(224,224,224,1)100%);
+  	background:-o-linear-gradient(top,rgba(249,249,249,1)50%,rgba(224,224,224,1)100%);
+  	background:-ms-linear-gradient(top,rgba(249,249,249,1)50%,rgba(224,224,224,1)100%);
+  	background:linear-gradient(top,rgba(249,249,249,1)50%,rgba(224,224,224,1)100%);
+  }
+  header {
+    font-size: 16px;
+  }
+}
