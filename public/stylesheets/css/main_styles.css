@@ -1,5 +1,5 @@
 body {
-  font: 13px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5); }
 
 .center {
@@ -14,6 +14,21 @@ body {
   background: -ms-linear-gradient(top, #8b8b8b 0%, #707070 50%, #5e5e5e 51%, #777777 100%);
   background: linear-gradient(top, #8b8b8b 0%, #707070 50%, #5e5e5e 51%, #777777 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8b8b8b', endColorstr='#777777',GradientType=0 ); }
+
+.apple-gradient-hover, .apple-button:hover {
+  background: #5d5d5d;
+  background: -moz-linear-gradient(top, #5d5d5d 0%, #424242 50%, #383838 51%, #535353 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5d5d5d), color-stop(50%, #424242), color-stop(51%, #383838), color-stop(100%, #535353));
+  background: -webkit-linear-gradient(top, #5d5d5d 0%, #424242 50%, #383838 51%, #535353 100%);
+  background: -o-linear-gradient(top, #5d5d5d 0%, #424242 50%, #383838 51%, #535353 100%);
+  background: -ms-linear-gradient(top, #5d5d5d 0%, #424242 50%, #383838 51%, #535353 100%);
+  background: linear-gradient(top, #5d5d5d 0%, #424242 50%, #383838 51%, #535353 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5d5d5d', endColorstr='#535353',GradientType=0 ); }
+
+.apple-gradient-keypress {
+  -webkit-box-shadow: inset -3px 3px 3px #292929 !important;
+  -moz-box-shadow: inset -3px 3px 3px #292929 !important;
+  box-shadow: inset -3px 3px 3px #292929 !important; }
 
 .navbar {
   display: table;
@@ -45,8 +60,9 @@ body {
   -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.5);
   box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.5); }
   .apple-button a {
+    margin-top: 17px;
     display: block;
     float: none;
     height: 36px;
     text-decoration: none;
-    color: #F9F9F9; }
+    color: rgba(255, 255, 255, 0.97); }
