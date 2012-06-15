@@ -38,7 +38,6 @@ body {
   display: table-cell;
   width: 100%;
   overflow: hidden;
-  vertical-align: middle;
   border-top: 1px solid #7D7D7D;
   border-right: 1px solid #565656;
   border-bottom: 1px solid #575757;
