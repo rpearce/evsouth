@@ -8,3 +8,13 @@ evsouth
     $ bundle
     $ ruby app.rb
     Navigate to http://localhost:4567
+
+## To compile SCSS
+```
+  sass --watch ./public/stylesheets/scss/:./public/stylesheets/css
+```
+
+## To compile CoffeeScript
+```
+  coffee -c public/javascripts
+```
