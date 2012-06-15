@@ -2,8 +2,10 @@
 @import 'core_variables';
 
 body {
-  font       : 13px "Lucida Sans Unicode", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+  background-color: #F2F2F2;
+  font            : 13px "Lucida Sans Unicode", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+  text-shadow     : 0 -1px 0 rgba(0,0,0,0.5);
+
 }
 
 .center { text-align: center; }
@@ -16,7 +18,7 @@ body {
   background: -o-linear-gradient(top,  #8b8b8b 0%,#707070 50%,#5e5e5e 51%,#777777 100%);
   background: -ms-linear-gradient(top,  #8b8b8b 0%,#707070 50%,#5e5e5e 51%,#777777 100%);
   background: linear-gradient(top,  #8b8b8b 0%,#707070 50%,#5e5e5e 51%,#777777 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b8b8b', endColorstr='#777777',GradientType=0 );
+  filter    : progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b8b8b', endColorstr='#777777',GradientType=0 );
 }
 
 .apple-gradient-hover {
@@ -27,7 +29,7 @@ body {
   background: -o-linear-gradient(top,  #5d5d5d 0%,#424242 50%,#383838 51%,#535353 100%);
   background: -ms-linear-gradient(top,  #5d5d5d 0%,#424242 50%,#383838 51%,#535353 100%);
   background: linear-gradient(top,  #5d5d5d 0%,#424242 50%,#383838 51%,#535353 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d5d5d', endColorstr='#535353',GradientType=0 );
+  filter    : progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d5d5d', endColorstr='#535353',GradientType=0 );
 }
 
 .apple-gradient-keypress {
