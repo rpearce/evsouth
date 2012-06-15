@@ -39,9 +39,10 @@ body {
 .navbar {
   display     : table;
   float       : left;
-  width       : 854px;
+  width       : 940px;
   table-layout: fixed;
   list-style  : none;
+  padding: 0;
 }
 
 .apple-button.first {
