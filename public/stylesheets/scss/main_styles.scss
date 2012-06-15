@@ -9,6 +9,9 @@ body {
 }
 
 .center { text-align: center; }
+.left   { float: left; }
+.right  { float: right; }
+.clear  { clear: both; }
 
 .apple-gradient {
   background: #8b8b8b;
@@ -92,4 +95,10 @@ body {
   background-color: $white;
   margin: 0 auto;
   padding-top: 40px;
+}
+.tagline {
+  padding: 75px 0 50px 150px;
+}
+.plug {
+  padding-top: 75px;
 }
