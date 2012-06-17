@@ -33,18 +33,7 @@
   %body
     .container
       .sixteen.columns
-        %nav.center
-          %ul.navbar
-            %li.apple-button.first
-              %a{href: '/'} Home
-            %li.apple-button
-              %a{href: '/products'} Products (coming soon)
-            %li.apple-button
-              %a{href: '/services'} Services (coming soon)
-            %li.apple-button
-              %a{href: '/about'} About
-            %li.apple-button.last
-              %a{href: '/contact'} Contact
+        = haml(:top_nav, layout: false)
         .main
           .content.center
             %section.logo
@@ -55,31 +44,7 @@
               %img{src: '/images/plug-opacity.jpg'}
             .clear
       .clear
-      %section.bottom-links.center
-        .four.columns
-          %header find a station
-          %a{href: 'http://maps.google.com/maps?hl=en&pq=google&cp=6&gs_id=m&xhr=t&bav=on.2,or.r_gc.r_pw.r_qf.,cf.osb&biw=1050&bih=702&um=1&ie=UTF-8&q=ev+charging+stations&fb=1&gl=us&hq=ev+charging+stations&hnear=0x88f8a5697931d1e3:0xf32808f4b379fa96,Columbia,+SC&ei=dlfNT77iHsLQsgaGq-i5Bg&sa=X&oi=local_group&ct=image&sqi=2&ved=0CCIQtgM', target: '_new'}
-          %img{src: '/images/map.jpg'}
-        .four.columns
-          %header
-            residential
-            %span.coming-soon (coming soon)
-          %img{src: '/images/buildings.jpg'}
-        .four.columns
-          %header
-            commercial
-            %span.coming-soon (coming soon)
-          %img{src: '/images/shops.jpg'}
-        .four.columns
-          %header
-            fleet solutions
-            %span.coming-soon (coming soon)
-          %img{src: '/images/vans.jpg'}
-      .clear
-      %br
-      %br
-      %br
-
+      = haml(:bottom_nav, layout: false)
 
     %script{src: "../lib/jquery-1.7.2.min.js"}
     %script{src: "../javascripts/application.js"}
