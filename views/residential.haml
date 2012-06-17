@@ -1,0 +1,50 @@
+!!!
+%html
+  /[if lt IE 7 ]         %html{class: "ie ie6", lang: "en"}
+  /[if IE 7 ]            %html{class: "ie ie7", lang: "en"}
+  /[if IE 8 ]            %html{class: "ie ie8", lang: "en"}
+  /[if (gte IE 9)|!(IE)] %html{lang: "en"}
+  %head
+    / Basic Page Needs
+    / ==================================================
+    %title EVSOUTH - Residential
+    %meta{name: 'description', content: ''}
+    %meta{name: 'author', content: 'Robert Pearce'}
+    %meta{name: 'keywords', content: ''}
+
+    / Mobile Specific Metas
+    / ==================================================
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1'}
+
+    / CSS
+    / ==================================================
+    %link{rel: 'stylesheet', type: 'text/css', href: '../stylesheets/css/main_styles.css'}
+    %link{rel: 'stylesheet', type: 'text/css', href: '../stylesheets/lib/skeleton.css'}
+    %link{rel: 'stylesheet', type: 'text/css', href: '../stylesheets/lib/layout.css'}
+    / %link{rel: 'stylesheet', type: 'text/css', href: '../stylesheets/lib/base.css'}
+
+    / Favicons
+    / ==================================================
+    / %link{rel: "shortcut icon", href: "images/favicon.ico"}
+    / %link{rel: "apple-touch-icon", href: "images/apple-touch-icon.png"}
+    / %link{rel: "apple-touch-icon", sizes: "72x72", href: "images/apple-touch-icon-72x72.png"}
+    / %link{rel: "apple-touch-icon", sizes: "114x114", href: "images/apple-touch-icon-114x114.png"}
+
+  %body
+    .container
+      .sixteen.columns
+        = haml(:top_nav, layout: false)
+        .main
+          .content.center
+            %section.logo
+              %img{src: '/images/evsouth-logo.png'}
+            %section.tagline.left
+              / %img{src: '/images/plugin.jpg'}
+            %section.plug.right
+              %img{src: '/images/plug-opacity.jpg'}
+            .clear
+      .clear
+      = haml(:bottom_nav, layout: false)
+
+    %script{src: "../lib/jquery-1.7.2.min.js"}
+    %script{src: "../javascripts/application.js"}

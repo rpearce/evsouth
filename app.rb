@@ -21,3 +21,15 @@ end
 get '/contact' do
   haml :contact
 end
+
+get '/residential' do
+  haml :residential
+end
+
+get '/commercial' do
+  haml :contact
+end
+
+get '/fleet_solutions' do
+  haml :contact
+end
