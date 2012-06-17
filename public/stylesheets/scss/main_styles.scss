@@ -5,7 +5,13 @@ body {
   background-color: #F2F2F2;
   font            : 13px "Lucida Sans Unicode", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
   text-shadow     : 0 -1px 0 rgba(0,0,0,0.5);
-
+  color           : #767676;
+  a {
+    color: #08C;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline; }
+  }
 }
 
 .center { text-align: center; }
@@ -45,7 +51,7 @@ body {
   width       : 940px;
   table-layout: fixed;
   list-style  : none;
-  padding: 0;
+  padding     : 0;
 }
 
 .apple-button.first {
@@ -80,6 +86,9 @@ body {
     height         : 36px;
     text-decoration: none;
     color          : rgba(255,255,255,0.97);
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -93,11 +102,18 @@ body {
   @include border-radius(4px);
   @include box-shadow(0 0 5px #D8D8D8);
   background-color: $white;
-  margin: 0 auto;
-  padding-top: 40px;
+  margin          : 0 auto;
+  padding-top     : 40px;
 }
 .tagline {
-  padding: 75px 0 50px 150px;
+  padding-left: 50px;
+  text-align  : left;
+  font-size   : 14px;
+  h1 {
+    color      : #333;
+    font-size  : 20px;
+    font-weight: normal;
+  }
 }
 .plug {
   padding-top: 75px;
@@ -106,9 +122,9 @@ body {
   @include box-shadow(rgba(0,0,0,0.1) 0 1px 3px);
   @include border-radius(5px);
   margin-top: 17px;
-  padding: 8px 0;
-  width: 237px;
-  height: 190px;
+  padding   : 8px 0;
+  width     : 237px;
+  height    : 190px;
   border-top: 1px solid #f2f2f2;
 	background: #f6f6f6;
 	background:-webkit-gradient(linear,left top,left bottom,color-stop(50%,rgba(249,249,249,1)),color-stop(100%,rgba(240,240,240,1)));
@@ -128,5 +144,9 @@ body {
   }
   header {
     font: 16px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    span.coming-soon {
+      font-size : 10px;
+      color: lighten(#767676,20%);
+    }
   }
 }

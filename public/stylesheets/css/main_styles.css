@@ -1,7 +1,13 @@
 body {
   background-color: #F2F2F2;
   font: 13px "Lucida Sans Unicode", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5); }
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  color: #767676; }
+  body a {
+    color: #08C;
+    text-decoration: none; }
+    body a:hover {
+      text-decoration: underline; }
 
 .center {
   text-align: center; }
@@ -77,6 +83,8 @@ body {
     height: 36px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.97); }
+    .apple-button a:hover {
+      text-decoration: none; }
 
 .main {
   clear: both;
@@ -98,7 +106,13 @@ body {
   padding-top: 40px; }
 
 .tagline {
-  padding: 75px 0 50px 150px; }
+  padding-left: 50px;
+  text-align: left;
+  font-size: 14px; }
+  .tagline h1 {
+    color: #333;
+    font-size: 20px;
+    font-weight: normal; }
 
 .plug {
   padding-top: 75px; }
@@ -134,3 +148,6 @@ body {
     background: linear-gradient(top, #f9f9f9 50%, #e0e0e0 100%); }
   .bottom-links div header {
     font: 16px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif; }
+    .bottom-links div header span.coming-soon {
+      font-size: 10px;
+      color: #a9a9a9; }
