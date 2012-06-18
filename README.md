@@ -11,7 +11,7 @@ evsouth
 
 ## To compile SCSS
 ```
-  sass --watch ./public/stylesheets/scss/:./public/stylesheets/css
+  sass --watch ./public/stylesheets/scss/:./public/stylesheets/css --style compressed
 ```
 
 ## To compile CoffeeScript
