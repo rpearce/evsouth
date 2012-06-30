@@ -118,6 +118,11 @@ body {
 .plug {
   padding-top: 75px;
 }
+.coming-soon {
+  font-size : 30px;
+  color: lighten(#767676,20%);
+}
+
 .bottom-links div {
   @include box-shadow(rgba(0,0,0,0.1) 0 1px 3px);
   @include border-radius(5px);
@@ -144,9 +149,5 @@ body {
   }
   header {
     font: 16px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-    span.coming-soon {
-      font-size : 10px;
-      color: lighten(#767676,20%);
-    }
   }
 }

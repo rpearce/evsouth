@@ -27,9 +27,9 @@ get '/residential' do
 end
 
 get '/commercial' do
-  haml :contact
+  haml :commercial
 end
 
 get '/fleet_solutions' do
-  haml :contact
+  haml :fleet_solutions
 end
